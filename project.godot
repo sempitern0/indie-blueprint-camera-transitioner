@@ -10,9 +10,19 @@ config_version=5
 
 [application]
 
-config/name="godot-plugin-template"
+config/name="Indie Blueprint Camera Transitioner"
+config/description="This camera transition system allows you to smoothly transition between cameras in your 2D/3D game."
+config/version="1.0.0"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+IndieBlueprintCameraTransitioner="*res://addons/ninetailsrabbit.indie_blueprint_camera_transitioner/src/camera_transitioner.tscn"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ninetailsrabbit.indie_blueprint_camera_transitioner/plugin.cfg")
 
 [rendering]
 
