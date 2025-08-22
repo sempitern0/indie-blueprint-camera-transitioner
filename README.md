@@ -1,15 +1,15 @@
 <div align="center">
 	<img src="icon.svg" alt="Logo" width="160" height="160">
 
-<h3 align="center">Indie Blueprint Camera Transitioner</h3>
+<h3 align="center">Easy Cam Switch</h3>
 
   <p align="center">
    This camera transition system allows you to smoothly transition between cameras in your 2D/3D game.
 	<br />
 	·
-	<a href="https://github.com/ninetailsrabbit/indie-blueprint-camera-transitioner/issues/new?assignees=ninetailsrabbit&labels=%F0%9F%90%9B+bug&projects=&template=bug_report.md&title=">Report Bug</a>
+	<a href="https://github.com/sempitern0/easy-cam-switch/issues/new?assignees=sempitern0&labels=%F0%9F%90%9B+bug&projects=&template=bug_report.md&title=">Report Bug</a>
 	·
-	<a href="https://github.com/ninetailsrabbit/indie-blueprint-camera-transitioner/issues/new?assignees=ninetailsrabbit&labels=%E2%AD%90+feature&projects=&template=feature_request.md&title=">Request Features</a>
+	<a href="https://github.com/sempitern0/easy-cam-switch/issues/new?assignees=sempitern0&labels=%E2%AD%90+feature&projects=&template=feature_request.md&title=">Request Features</a>
   </p>
 </div>
 
@@ -24,12 +24,12 @@
 
 # Installation 📦
 
-1. [Download Latest Release](https://github.com/ninetailsrabbit/indie-blueprint-camera-transitioner/releases/latest)
-2. Unpack the `addons/indie-blueprint-camera-transitioner` folder into your `/addons` folder within the Godot project
+1. [Download Latest Release](https://github.com/sempitern0/easy-cam-switch/releases/latest)
+2. Unpack the `addons/easy-cam-switch` folder into your `/addons` folder within the Godot project
 3. Enable this addon within the Godot settings: `Project > Project Settings > Plugins`
 
 To better understand what branch to choose from for which Godot version, please refer to this table:
-|Godot Version|indie-blueprint-camera-transitioner Branch|indie-blueprint-camera-transitioner Version|
+|Godot Version|easy-cam-switch Branch|easy-cam-switch Version|
 |---|---|--|
 |[![GodotEngine](https://img.shields.io/badge/Godot_4.3.x_stable-blue?logo=godotengine&logoColor=white)](https://godotengine.org/)|`4.3`|`1.x`|
 |[![GodotEngine](https://img.shields.io/badge/Godot_4.4.x_stable-blue?logo=godotengine&logoColor=white)](https://godotengine.org/)|`main`|`1.x`|

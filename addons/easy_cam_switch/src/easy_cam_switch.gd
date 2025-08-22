@@ -1,4 +1,4 @@
-@icon("res://addons/ninetailsrabbit.indie_blueprint_camera_transitioner/icons/camera_transitioner.svg")
+@icon("camera.svg")
 extends Node
 
 signal transition_2d_started(from: Camera2D, to: Camera2D, duration: float)
@@ -21,8 +21,8 @@ var transition_tween_3d: Tween
 
 
 func _ready():
-	assert(global_camera_2d is Camera2D, "IndieBlueprintCameraTransitioner: Needs a Camera2D in scene to allow the transitions")
-	assert(global_camera_3d is Camera3D, "IndieBlueprintCameraTransitioner: Needs a Camera3D in scene to allow the transitions")
+	assert(global_camera_2d is Camera2D, "EasyCamSwitch: Needs a Camera2D in scene to allow the transitions")
+	assert(global_camera_3d is Camera3D, "EasyCamSwitch: Needs a Camera3D in scene to allow the transitions")
 	
 	global_camera_2d.enabled = false
 	global_camera_3d.clear_current()

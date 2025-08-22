@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Indie Blueprint Camera Transitioner"
+config/name="Easy Cam Switch"
 config/description="This camera transition system allows you to smoothly transition between cameras in your 2D/3D game."
 config/version="1.1.0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
@@ -18,11 +18,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-IndieBlueprintCameraTransitioner="*res://addons/ninetailsrabbit.indie_blueprint_camera_transitioner/src/camera_transitioner.tscn"
+EasyCamSwitch="*res://addons/easy_cam_switch/src/easy_cam_switch.tscn"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ninetailsrabbit.indie_blueprint_camera_transitioner/plugin.cfg")
+enabled=PackedStringArray("res://addons/easy_cam_switch/plugin.cfg")
 
 [rendering]
 
