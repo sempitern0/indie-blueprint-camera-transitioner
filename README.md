@@ -18,9 +18,9 @@
 
 - [Installation 📦](#installation-)
 - [Camera transitioner 🎥](#camera-transitioner-)
-  - [Signals](#signals)
-  - [How to use](#how-to-use)
-  - [Transition steps](#transition-steps)
+	- [Signals](#signals)
+	- [How to use](#how-to-use)
+	- [Transition steps](#transition-steps)
 
 # Installation 📦
 
@@ -36,7 +36,7 @@ To better understand what branch to choose from for which Godot version, please 
 
 # Camera transitioner 🎥
 
-This system allows you to smoothly transition between cameras in your game using the `GlobalCameraShifter` class. To enable this functionality, you'll need to autoload the `autoload/camera/global_camera_transition.tscn`. This scene creates two cameras internally for transition purposes.
+This system allows you to smoothly transition between cameras in your game using the `EasyCamSwitch` class. The plugin makes available this class as an autoload.
 
 **Concept:**
 The system utilizes a third, global camera to facilitate the transition between two other cameras. This temporary camera mimics the properties of the camera you want to transition to. Once the transition completes, the target camera becomes the active camera in your scene.
@@ -64,7 +64,7 @@ transition_3d_finished(from: Camera3D, to: Camera3D, duration: float)
 
 ## How to use
 
-First of all you can configure few parameters on this autoload scene
+First of all you can configure few parameters on this autoload scene located by default in `addons/easy_cam_switch/src/easy_cam_switch.tscn`
 
 ![global_camera_parameters](images/global_camera.png)
 
@@ -81,7 +81,7 @@ func transition_to_requested_camera_3d(from: Camera3D, to: Camera3D, duration: f
 
 ## Transition steps
 
-When a transition is recorded _(`record_transition == true`)_ it will create a class `TransitionStep2D` or `TransitionStep3D` depending on the transition requested.
+When a transition is recorded _(`record_transition == true`)_ it will create a class `TransitionStep2D` or `TransitionStep3D` depending on the transition requested and saved into his corresponding variable `transitions_steps_2d`or `transition_steps_3d`.
 
 ```swift
 class TransitionStep2D:
